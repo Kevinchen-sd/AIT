@@ -1,0 +1,29 @@
+# OS / Editor
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+.secrets/
+*.sqlite3
+
+# Node (if applicable)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Data / artifacts
+data/
+*.log
+
+# Coverage / build
+.coverage
+dist/
+build/
