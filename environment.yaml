@@ -1,0 +1,24 @@
+name: ai-trading
+channels: [conda-forge]
+dependencies:
+  - python=3.11
+  - pip
+  - pandas
+  - numpy
+  - pyarrow
+  - pyyaml
+  - tqdm
+  - sqlalchemy
+  - uvicorn
+  - fastapi
+  - pydantic
+  - scikit-learn
+  - hydra-core
+  - prefect
+  - jupyter
+  - pytest
+  - ruff
+  - nodejs>=18
+  - pip:
+      - python-dotenv
+      - vectorbtpro           # install via your subscription (see note below)

@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: ai-trading
+Version: 0.0.1
+Requires-Python: >=3.11
+Provides-Extra: app
+Requires-Dist: fastapi; extra == "app"
+Requires-Dist: uvicorn; extra == "app"
+Requires-Dist: pydantic; extra == "app"
+Requires-Dist: sqlalchemy; extra == "app"
+Requires-Dist: python-dotenv; extra == "app"
+Provides-Extra: research
+Requires-Dist: pandas; extra == "research"
+Requires-Dist: numpy; extra == "research"
+Requires-Dist: pyarrow; extra == "research"
+Requires-Dist: pyyaml; extra == "research"
+Requires-Dist: tqdm; extra == "research"
+Requires-Dist: prefect; extra == "research"
+Requires-Dist: hydra-core; extra == "research"
+Requires-Dist: scikit-learn; extra == "research"
+Requires-Dist: pytest; extra == "research"
+Requires-Dist: ruff; extra == "research"

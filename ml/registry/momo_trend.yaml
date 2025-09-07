@@ -1,0 +1,13 @@
+name: momo_trend
+version: 0.1.0
+artifact: ml/strategies/momo_trend.py
+entrypoint: MomoTrend
+params:
+  lookbacks: [21, 63, 126]
+  ma_fast: 50
+  ma_slow: 200
+  vol_norm_window: 14
+  top_frac: 0.05
+metadata:
+  author: you
+  description: Momentum + trend + voladj composite score.

@@ -1,0 +1,4 @@
+1. Changed .vscode/settings.json from
+     "python.defaultInterpreterPath": "~/.conda/envs/ai-trading/bin/python"
+   to:
+     "python.defaultInterpreterPath": "/opt/homebrew/anaconda3/envs/vectorbtpro/python",
