@@ -1,4 +1,4 @@
-name: ai-trading
+name: vectorbtpro
 channels: [conda-forge]
 dependencies:
   - python=3.11
@@ -20,5 +20,6 @@ dependencies:
   - ruff
   - nodejs>=18
   - pip:
+      - requests-oauthlib
       - python-dotenv
-      - vectorbtpro           # install via your subscription (see note below)
+#      - vectorbtpro           # install via your subscription (see note below)

@@ -40,3 +40,13 @@ dev-no-open:
 
 precommit-test:
 	pre-commit run --all-files
+
+env-update:
+	conda env update -n vectorbtpro -f environment.yaml --prune
+
+# Repo visibility helpers
+repo-public:
+	./scripts/visibility-gh.zsh Kevinchen-sd/AIT public
+
+repo-private:
+	./scripts/visibility-gh.zsh Kevinchen-sd/AIT private
