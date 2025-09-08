@@ -33,11 +33,7 @@ Runs without Docker (Mode A: conda + local files).
 
 ## 📂 Directory Structure
 
-/Users/kevin/projects/AIT/
-├─ session-logs/              # session logs directory
-├─ .env
-├─ Makefile
-├─ environment.yml
+```
 /Users/kevin/projects/AIT/
 ├─ .env
 ├─ Makefile
@@ -157,6 +153,17 @@ Click **Analyze** → you’ll see Keep/Watch/Replace + sparklines.
   Ensures `/v1/...` fetches go to FastAPI (`:8000`).
 - **Sparklines before Norgate**:
   Use `/v1/md/bars_from_silver` endpoint reading your parquet.
+
+---
+
+## 🩺 Health & Status
+
+Two lightweight endpoints are provided for monitoring and dev scripts:
+
+- **GET `/healthz`** → returns 200 when API is up (liveness).
+- **GET `/readyz`** → checks that required files exist (e.g., `data/silver/` and `data/gold/`) and returns 200 when ready.
+
+These help `scripts/dev.sh` (and future deploys) wait for the backend before opening the UI.
 
 ---
 
